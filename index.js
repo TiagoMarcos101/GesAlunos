@@ -1,17 +1,27 @@
 const express = require('express')
 const path = require('path')
 const app = express()
-const PORT = 3000;
-
+const connection = require('./dbconnection')
 app.use(express.static('./public'))
-app.get('/navbar',(req,res))
 
-app.get('/',(req, res) => {
- res.sendFile(path.join(__dirname,'/public/index.html'))
+app.use('/navbar',require('./rotas/navbarRoute.js'))
+app.use('/formdata',require('./rotas/formdataRoute.js'))
+
+
+
+
+
+app.get('/', (req,res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'))
 })
-app.listen(PORT, function(){
-    console.log(`Server is running on PORT: ` + PORT);
- });
+
+app.get('/navbar',(req,res)=>{
+    res.sendFile(path.join(__dirname, './public/navbar.html'))
+})
 
 
-
+const port = 3000
+ 
+app.listen(port, () => {
+    console.log(`Listenning on port ${port}`)
+})

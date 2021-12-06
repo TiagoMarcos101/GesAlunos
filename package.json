@@ -1,29 +1,21 @@
+
 {
-    "name": "intromsqlnode",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "start": "nodemon index.js"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "dotenv": "^10.0.0",
-      "express": "^4.17.1",
-      "mysql2": "^2.3.3",
-      "path": "^0.12.7"
-    },
-    "devDependencies": {
-      "nodemon": "^2.0.15"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/TiagoMarcos101/GesAlunos.git"
-    },
-    "bugs": {
-      "url": "https://github.com/TiagoMarcos101/GesAlunos/issues"
-    },
-    "homepage": "https://github.com/TiagoMarcos101/GesAlunos#readme"
+  "name": "gesalunos-t2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
-  
+}
